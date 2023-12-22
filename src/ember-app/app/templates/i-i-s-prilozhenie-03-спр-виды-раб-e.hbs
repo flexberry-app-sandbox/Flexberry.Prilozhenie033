@@ -1,0 +1,99 @@
+<h3 class="ui header">{{t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.код
+      class=(if (v-get validationModel "код" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.код-caption")
+      data-test-i-i-s-prilozhenie-03-спр-виды-раб-e-код=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "код" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.наименование
+      class=(if (v-get validationModel "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.наименование-caption")
+      data-test-i-i-s-prilozhenie-03-спр-виды-раб-e-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наименование" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.спрТипТрансСр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрТипТрансСр
+      relationName="спрТипТрансСр"
+      projection="СпрТипТрансСрL"
+      title=(t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.спрТипТрансСр-caption")
+      readonly=readonly
+      componentName="спрТипТрансСрLookup"
+      class=(if (v-get validationModel "спрТипТрансСр" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-спр-виды-раб-e-спрТипТрансСр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрТипТрансСр" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрТипТрансСр.наименование
+      class=(if (v-get validationModel.спрТипТрансСр "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.спрТипТрансСр.наименование-caption")
+      data-test-i-i-s-prilozhenie-03-спр-виды-раб-e-спрТипТрансСр-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрТипТрансСр "наименование" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.спрЕдИзмер-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрЕдИзмер
+      relationName="спрЕдИзмер"
+      projection="СпрЕдИзмерL"
+      title=(t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.спрЕдИзмер-caption")
+      readonly=readonly
+      componentName="спрЕдИзмерLookup"
+      class=(if (v-get validationModel "спрЕдИзмер" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-спр-виды-раб-e-спрЕдИзмер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрЕдИзмер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрЕдИзмер.наименование
+      class=(if (v-get validationModel.спрЕдИзмер "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-виды-раб-e.спрЕдИзмер.наименование-caption")
+      data-test-i-i-s-prilozhenie-03-спр-виды-раб-e-спрЕдИзмер-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрЕдИзмер "наименование" "message")}}
+  </div>
+</form>

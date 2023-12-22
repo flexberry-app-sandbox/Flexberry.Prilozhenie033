@@ -1,0 +1,100 @@
+﻿{
+  "applicationCaption": "Prilozhenie_03",
+  "applicationTitle": "Prilozhenie_03",
+  "items": [
+    {
+      "link": null,
+      "menuName": "справочники",
+      "caption": "Справочники",
+      "title": "Справочники",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-03-спр-тип-транс-ср-l",
+          "menuName": null,
+          "caption": "Справочник тип транспортного средства",
+          "title": "Спр тип транс ср L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-ед-измер-l",
+          "menuName": null,
+          "caption": "Справочник единицы измерения",
+          "title": "Спр ед измер L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-трансп-ср-l",
+          "menuName": null,
+          "caption": "Справочник транспортные средства",
+          "title": "Спр трансп ср L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-виды-раб-l",
+          "menuName": null,
+          "caption": "Справочник виды работ",
+          "title": "Спр виды раб L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-объект-стр-l",
+          "menuName": null,
+          "caption": "Справочник объект строительства",
+          "title": "Спр объект стр L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-контр-аг-l",
+          "menuName": null,
+          "caption": "Справочник контрагенты",
+          "title": "Спр контр аг L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-пользов-l",
+          "menuName": null,
+          "caption": "Справочник пользователи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-спр-номен-l",
+          "menuName": null,
+          "caption": "Справочник номенклатура",
+          "title": "Спр номен L",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "документы",
+      "caption": "Документы",
+      "title": "Документы",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-03-факт-выпол-раб-l",
+          "menuName": null,
+          "caption": "Документ: Фактическое выполнение работ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-03-док-план-за-на-д-l",
+          "menuName": null,
+          "caption": "Документ: Плановая заявка на день",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

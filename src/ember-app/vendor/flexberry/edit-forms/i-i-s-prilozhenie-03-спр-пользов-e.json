@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Пользователи",
+  "name": "IISPrilozhenie_03СпрПользовE",
+  "className": "СпрПользовE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-пользов",
+      "modelProjection": "СпрПользовE"
+    }
+  ]
+}

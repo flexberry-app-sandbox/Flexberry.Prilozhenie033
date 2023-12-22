@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрЕдИзмер",
+      "projection": "СпрЕдИзмерL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Номенклатура",
+  "name": "IISPrilozhenie_03СпрНоменE",
+  "className": "СпрНоменE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-номен",
+      "modelProjection": "СпрНоменE"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+﻿{
+  "name": "IISPrilozhenie_03СпрКонтрАг",
+  "modelName": "i-i-s-prilozhenie-03-спр-контр-аг",
+  "className": "СпрКонтрАг",
+  "nameSpace": "IIS.Prilozhenie_03",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "иНН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодОКВЭД",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодПоОКПО",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кПП",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оГРН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "телефон",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрКонтрАгE",
+      "modelName": "i-i-s-prilozhenie-03-спр-контр-аг",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "кПП",
+          "caption": "КПП",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "кодОКВЭД",
+          "caption": "КодОКВЭД",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "оГРН",
+          "caption": "ОГРН",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "кодПоОКПО",
+          "caption": "КодПоОКПО",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СпрКонтрАгL",
+      "modelName": "i-i-s-prilozhenie-03-спр-контр-аг",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "кПП",
+          "caption": "КПП",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "кодОКВЭД",
+          "caption": "КодОКВЭД",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "оГРН",
+          "caption": "ОГРН",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "кодПоОКПО",
+          "caption": "КодПоОКПО",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

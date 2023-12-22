@@ -1,0 +1,260 @@
+﻿{
+  "name": "IISPrilozhenie_03ФактВыполРаб",
+  "modelName": "i-i-s-prilozhenie-03-факт-выпол-раб",
+  "className": "ФактВыполРаб",
+  "nameSpace": "IIS.Prilozhenie_03",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-prilozhenie-03-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрОбъектСтр",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-объект-стр",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрПользов",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-пользов",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧФактВыпР",
+      "relatedTo": "i-i-s-prilozhenie-03-т-ч-факт-вып-р",
+      "inverse": "фактВыполРаб"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ФактВыполРабE",
+      "modelName": "i-i-s-prilozhenie-03-факт-выпол-раб",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Организация",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-prilozhenie-03-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрПользов",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Пользователь",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "Пользователь",
+          "name": "спрПользов",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-пользов",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрОбъектСтр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Объект строительства",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "default",
+          "caption": "Объект строительства",
+          "name": "спрОбъектСтр",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-объект-стр",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧФактВыпРE",
+          "caption": "Табличная Часть Фактическое выполнение работ",
+          "name": "тЧФактВыпР",
+          "relatedTo": "i-i-s-prilozhenie-03-т-ч-факт-вып-р",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ФактВыполРабL",
+      "modelName": "i-i-s-prilozhenie-03-факт-выпол-раб",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрПользов",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Пользователь",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Пользователь",
+          "name": "спрПользов",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-пользов",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрОбъектСтр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Объект строительства",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Объект строительства",
+          "name": "спрОбъектСтр",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-объект-стр",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Организация",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-prilozhenie-03-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

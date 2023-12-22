@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-03-док-план-за-на-д-e",
+  "editForm": "i-i-s-prilozhenie-03-док-план-за-на-д-e",
+  "external": false,
+  "caption": "Плановая заявка на день",
+  "name": "IISPrilozhenie_03ДокПланЗаНаДL",
+  "className": "ДокПланЗаНаДL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-док-план-за-на-д",
+      "modelProjection": "ДокПланЗаНаДL"
+    }
+  ]
+}

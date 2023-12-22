@@ -1,0 +1,95 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрПользов",
+      "projection": "СпрПользовL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрОбъектСтр",
+      "projection": "СпрОбъектСтрL",
+      "detailModelName": null
+    },
+    {
+      "master": "статьиЗатрат",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СтатьиЗатрат",
+      "projection": "СтатьиЗатратL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрКонтрАг",
+      "displayAttributeName": "контрагент",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрКонтрАг",
+      "projection": "СпрКонтрАгL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрНомен",
+      "displayAttributeName": "номенклатура",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрНомен",
+      "projection": "СпрНоменL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрВидыРаб",
+      "displayAttributeName": "вид работы",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрВидыРаб",
+      "projection": "СпрВидыРабL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрТранспСр",
+      "displayAttributeName": "транспортное средство",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрТранспСр",
+      "projection": "СпрТранспСрL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрТипТрансСр",
+      "displayAttributeName": "тип транспортного средства",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрТипТрансСр",
+      "projection": "СпрТипТрансСрL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    },
+    {
+      "master": "спрЕдИзмер",
+      "displayAttributeName": "единицы измерения",
+      "required": true,
+      "relationName": "ТЧПлЗНаД.СпрЕдИзмер",
+      "projection": "СпрЕдИзмерL",
+      "detailModelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д"
+    }
+  ],
+  "external": false,
+  "caption": "Плановая заявка на день",
+  "name": "IISPrilozhenie_03ДокПланЗаНаДE",
+  "className": "ДокПланЗаНаДE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-док-план-за-на-д",
+      "modelProjection": "ДокПланЗаНаДE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-03-спр-трансп-ср-e",
+  "editForm": "i-i-s-prilozhenie-03-спр-трансп-ср-e",
+  "external": false,
+  "caption": "Транспортное средство",
+  "name": "IISPrilozhenie_03СпрТранспСрL",
+  "className": "СпрТранспСрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-трансп-ср",
+      "modelProjection": "СпрТранспСрL"
+    }
+  ]
+}

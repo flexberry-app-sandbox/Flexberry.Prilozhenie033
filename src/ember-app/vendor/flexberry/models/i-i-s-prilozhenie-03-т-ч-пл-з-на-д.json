@@ -1,0 +1,284 @@
+﻿{
+  "name": "IISPrilozhenie_03ТЧПлЗНаД",
+  "modelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д",
+  "className": "ТЧПлЗНаД",
+  "nameSpace": "IIS.Prilozhenie_03",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времПриб",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колЧас",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "обГруз",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "обРаб",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрВидыРаб",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-виды-раб",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрЕдИзмер",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-ед-измер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрКонтрАг",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-контр-аг",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрНомен",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-номен",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрТипТрансСр",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрТранспСр",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-трансп-ср",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "статьиЗатрат",
+      "relatedTo": "i-i-s-prilozhenie-03-статьи-затрат",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докПланЗаНаД",
+      "relatedTo": "i-i-s-prilozhenie-03-док-план-за-на-д",
+      "inverse": "тЧПлЗНаД"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПлЗНаДE",
+      "modelName": "i-i-s-prilozhenie-03-т-ч-пл-з-на-д",
+      "attrs": [
+        {
+          "name": "обРаб",
+          "caption": "Объем работ",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "времПриб",
+          "caption": "Время прибытия",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "колЧас",
+          "caption": "Количество часов работы",
+          "hidden": false,
+          "index": 14
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СтатьиЗатрат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Статья затрат",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "default",
+          "caption": "Статья затрат",
+          "name": "статьиЗатрат",
+          "relatedTo": "i-i-s-prilozhenie-03-статьи-затрат",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Контрагент",
+          "lookupValueField": "контрагент",
+          "relationName": "СпрКонтрАг",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Контрагент",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Контрагент",
+          "name": "спрКонтрАг",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-контр-аг",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Номенклатура",
+          "lookupValueField": "номенклатура",
+          "relationName": "СпрНомен",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Номенклатура",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Номенклатура",
+          "name": "спрНомен",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-номен",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Вид работы",
+          "lookupValueField": "вид работы",
+          "relationName": "СпрВидыРаб",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Вид работы",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Вид работы",
+          "name": "спрВидыРаб",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-виды-раб",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Транспортное средство",
+          "lookupValueField": "транспортное средство",
+          "relationName": "СпрТранспСр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Транспортное средство",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "standard",
+          "caption": "Транспортное средство",
+          "name": "спрТранспСр",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-трансп-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Тип транспортного средства",
+          "lookupValueField": "тип транспортного средства",
+          "relationName": "СпрТипТрансСр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Тип транспортного средства",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 11,
+          "type": "standard",
+          "caption": "Тип транспортного средства",
+          "name": "спрТипТрансСр",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Единицы измерения",
+          "lookupValueField": "единицы измерения",
+          "relationName": "СпрЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Единицы измерения",
+              "hidden": false,
+              "index": 16
+            }
+          ],
+          "index": 15,
+          "type": "standard",
+          "caption": "Единицы измерения",
+          "name": "спрЕдИзмер",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-ед-измер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

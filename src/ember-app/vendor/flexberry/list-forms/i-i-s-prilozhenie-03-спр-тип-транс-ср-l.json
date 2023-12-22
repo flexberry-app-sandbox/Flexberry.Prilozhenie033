@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-03-спр-тип-транс-ср-e",
+  "editForm": "i-i-s-prilozhenie-03-спр-тип-транс-ср-e",
+  "external": false,
+  "caption": "Тип транспортного средства",
+  "name": "IISPrilozhenie_03СпрТипТрансСрL",
+  "className": "СпрТипТрансСрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+      "modelProjection": "СпрТипТрансСрL"
+    }
+  ]
+}

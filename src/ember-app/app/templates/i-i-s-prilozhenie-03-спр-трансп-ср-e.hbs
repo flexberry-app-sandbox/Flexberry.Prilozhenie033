@@ -1,0 +1,97 @@
+<h3 class="ui header">{{t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.код
+      class=(if (v-get validationModel "код" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.код-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-код=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "код" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.видПеревоз
+      class=(if (v-get validationModel "видПеревоз" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.видПеревоз-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-видПеревоз=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видПеревоз" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.госНомер
+      class=(if (v-get validationModel "госНомер" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.госНомер-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-госНомер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "госНомер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.наименование
+      class=(if (v-get validationModel "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.наименование-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.грузПодъемВТон
+      class=(if (v-get validationModel "грузПодъемВТон" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.грузПодъемВТон-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-грузПодъемВТон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "грузПодъемВТон" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.марка
+      class=(if (v-get validationModel "марка" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.марка-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-марка=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "марка" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.лицеКартНомер
+      class=(if (v-get validationModel "лицеКартНомер" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-спр-трансп-ср-e.лицеКартНомер-caption")
+      data-test-i-i-s-prilozhenie-03-спр-трансп-ср-e-лицеКартНомер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "лицеКартНомер" "message")}}
+  </div>
+</form>

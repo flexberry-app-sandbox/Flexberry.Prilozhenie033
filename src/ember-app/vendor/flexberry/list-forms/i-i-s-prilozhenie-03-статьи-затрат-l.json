@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-03-статьи-затрат-e",
+  "editForm": "i-i-s-prilozhenie-03-статьи-затрат-e",
+  "external": false,
+  "caption": "Статьи затрат",
+  "name": "IISPrilozhenie_03СтатьиЗатратL",
+  "className": "СтатьиЗатратL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-статьи-затрат",
+      "modelProjection": "СтатьиЗатратL"
+    }
+  ]
+}

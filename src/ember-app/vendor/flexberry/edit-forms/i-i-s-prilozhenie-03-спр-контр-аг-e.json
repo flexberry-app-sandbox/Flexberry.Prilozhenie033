@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Контрагенты",
+  "name": "IISPrilozhenie_03СпрКонтрАгE",
+  "className": "СпрКонтрАгE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-контр-аг",
+      "modelProjection": "СпрКонтрАгE"
+    }
+  ]
+}

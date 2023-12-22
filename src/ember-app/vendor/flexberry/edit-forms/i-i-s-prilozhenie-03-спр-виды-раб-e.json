@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрТипТрансСр",
+      "projection": "СпрТипТрансСрL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрЕдИзмер",
+      "projection": "СпрЕдИзмерL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Вид работы",
+  "name": "IISPrilozhenie_03СпрВидыРабE",
+  "className": "СпрВидыРабE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-виды-раб",
+      "modelProjection": "СпрВидыРабE"
+    }
+  ]
+}

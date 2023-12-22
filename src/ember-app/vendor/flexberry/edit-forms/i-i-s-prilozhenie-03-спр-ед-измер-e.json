@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Единицы измерения",
+  "name": "IISPrilozhenie_03СпрЕдИзмерE",
+  "className": "СпрЕдИзмерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-ед-измер",
+      "modelProjection": "СпрЕдИзмерE"
+    }
+  ]
+}

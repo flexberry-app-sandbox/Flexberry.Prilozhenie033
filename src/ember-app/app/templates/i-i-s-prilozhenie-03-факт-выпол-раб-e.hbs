@@ -1,0 +1,150 @@
+<h3 class="ui header">{{t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.номер-caption")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.время
+      class=(if (v-get validationModel "время" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.время-caption")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-время=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "время" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.организация-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организация
+      relationName="организация"
+      projection="ОрганизацияL"
+      title=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.организация-caption")
+      readonly=readonly
+      componentName="организацияLookup"
+      class=(if (v-get validationModel "организация" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организация" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.организация.наименование
+      class=(if (v-get validationModel.организация "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.организация.наименование-caption")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-организация-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.организация "наименование" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.спрПользов-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрПользов
+      relationName="спрПользов"
+      projection="СпрПользовL"
+      title=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.спрПользов-caption")
+      readonly=readonly
+      componentName="спрПользовLookup"
+      class=(if (v-get validationModel "спрПользов" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-спрПользов=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрПользов" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПользов.фИО
+      class=(if (v-get validationModel.спрПользов "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.спрПользов.фИО-caption")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-спрПользов-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПользов "фИО" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.спрОбъектСтр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрОбъектСтр
+      relationName="спрОбъектСтр"
+      projection="СпрОбъектСтрL"
+      title=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.спрОбъектСтр-caption")
+      readonly=readonly
+      componentName="спрОбъектСтрLookup"
+      class=(if (v-get validationModel "спрОбъектСтр" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-спрОбъектСтр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрОбъектСтр" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрОбъектСтр.наименование
+      class=(if (v-get validationModel.спрОбъектСтр "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.спрОбъектСтр.наименование-caption")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-спрОбъектСтр-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрОбъектСтр "наименование" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-03-факт-выпол-раб-e.тЧФактВыпР-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="тЧФактВыпРGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.тЧФактВыпР
+      content=model.тЧФактВыпР
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "тЧФактВыпР" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-03-факт-выпол-раб-e-тЧФактВыпР=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тЧФактВыпР" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-03-спр-ед-измер-e",
+  "editForm": "i-i-s-prilozhenie-03-спр-ед-измер-e",
+  "external": false,
+  "caption": "Единицы измерения",
+  "name": "IISPrilozhenie_03СпрЕдИзмерL",
+  "className": "СпрЕдИзмерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-ед-измер",
+      "modelProjection": "СпрЕдИзмерL"
+    }
+  ]
+}

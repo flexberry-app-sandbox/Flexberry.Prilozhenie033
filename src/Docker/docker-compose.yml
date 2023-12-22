@@ -1,0 +1,16 @@
+﻿version: '3'
+
+services:
+  app:
+    image: prilozhenie_03/app
+    links:
+      - app-postgres-db:app-postgres-db
+    ports:
+      - 80:80
+
+  app-postgres-db:
+    image: prilozhenie_03/postgre-sql
+    volumes:
+      - DB:/var/lib/pgsql/data/
+volumes:
+  DB:

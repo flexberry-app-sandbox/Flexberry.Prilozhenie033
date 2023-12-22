@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-03-организация-e",
+  "editForm": "i-i-s-prilozhenie-03-организация-e",
+  "external": false,
+  "caption": "Организация",
+  "name": "IISPrilozhenie_03ОрганизацияL",
+  "className": "ОрганизацияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-организация",
+      "modelProjection": "ОрганизацияL"
+    }
+  ]
+}

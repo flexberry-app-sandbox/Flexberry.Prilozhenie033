@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISPrilozhenie_03СпрНомен",
+  "modelName": "i-i-s-prilozhenie-03-спр-номен",
+  "className": "СпрНомен",
+  "nameSpace": "IIS.Prilozhenie_03",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "описание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрЕдИзмер",
+      "relatedTo": "i-i-s-prilozhenie-03-спр-ед-измер",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрНоменE",
+      "modelName": "i-i-s-prilozhenie-03-спр-номен",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "описание",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Единица измерения",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Единица измерения",
+          "name": "спрЕдИзмер",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-ед-измер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СпрНоменL",
+      "modelName": "i-i-s-prilozhenie-03-спр-номен",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "описание",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Единица измерения",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Единица измерения",
+          "name": "спрЕдИзмер",
+          "relatedTo": "i-i-s-prilozhenie-03-спр-ед-измер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

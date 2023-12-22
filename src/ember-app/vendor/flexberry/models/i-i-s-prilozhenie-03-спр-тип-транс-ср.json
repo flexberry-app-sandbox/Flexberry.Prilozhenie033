@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISPrilozhenie_03СпрТипТрансСр",
+  "modelName": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+  "className": "СпрТипТрансСр",
+  "nameSpace": "IIS.Prilozhenie_03",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "вместВКубМ",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "описание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрТипТрансСрE",
+      "modelName": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "описание",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "вместВКубМ",
+          "caption": "Вместимость в кубических метрах",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СпрТипТрансСрL",
+      "modelName": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "описание",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "вместВКубМ",
+          "caption": "Вместимость в кубических метрах",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

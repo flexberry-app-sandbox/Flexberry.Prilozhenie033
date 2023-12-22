@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Тип транспортного средства",
+  "name": "IISPrilozhenie_03СпрТипТрансСрE",
+  "className": "СпрТипТрансСрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-03-спр-тип-транс-ср",
+      "modelProjection": "СпрТипТрансСрE"
+    }
+  ]
+}
